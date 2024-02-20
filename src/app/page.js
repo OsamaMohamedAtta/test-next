@@ -16,7 +16,7 @@ export default function Home() {
     document.querySelector('.layer').classList.replace('hide-layer', 'show-layer');
     setTimeout(() => {
       document.querySelector('.layer').classList.replace('show-layer', 'hide-layer');
-    }, 2000);
+    }, 2500);
   }
   return (
     <main className="main">
