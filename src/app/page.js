@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import 'mathlive';
 import '/node_modules/mathlive/dist/mathlive-static.css';
 import '/node_modules/mathlive/dist/mathlive-fonts.css';
+import MathInput from "react-math-keyboard";
+
 
 export default function Home() {
   const [value, setValue] = useState("");
@@ -24,6 +26,10 @@ export default function Home() {
         {value}
       </math-field>
       <div className="layer hide-layer"></div>
+
+      <MathInput
+        setValue={setValue}
+      />
     </main>
   );
 }
