@@ -10,16 +10,16 @@ import MathInput from "react-math-keyboard";
 export default function Home() {
   const [value, setValue] = useState("");
 
-  useEffect(() => {
-    handleMathFailed()
-  }, [value]);
+  // useEffect(() => {
+  //   handleMathFailed()
+  // }, [value]);
 
-  const handleMathFailed = () => {
-    document.querySelector('.layer').classList.replace('hide-layer', 'show-layer');
-    setTimeout(() => {
-      document.querySelector('.layer').classList.replace('show-layer', 'hide-layer');
-    }, 2000);
-  }
+  // const handleMathFailed = () => {
+  //   document.querySelector('.layer').classList.replace('hide-layer', 'show-layer');
+  //   setTimeout(() => {
+  //     document.querySelector('.layer').classList.replace('show-layer', 'hide-layer');
+  //   }, 2000);
+  // }
   return (
     <main className="main">
       <math-field onInput={evt => setValue(evt.target.value)} >
